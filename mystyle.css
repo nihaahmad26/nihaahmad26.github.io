@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.body {
+    width: 1500px;
+    background-color:#01012b;
+    color: #f90d7b;
+    font-family: Verdana, sans-serif;
+}
+.header{
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar{
+    width: 450px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#About-me{
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4edffe;
+    background-color:#01012b;
+
+}
+a:link, a:visited, a:active {
+    color: #f90d7b;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #f90d7b;
+    background-color: transparent;
+    text-decoration: underline;  
+}
+
+.image {
+    padding: 20px;
+    height: 450px;
+    width:450px;
+    border-radius: 7%;
+}
+
+.About {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #05d8e6;
+    height: 800px;
+}
+
+.profile-text {
+    font-family: Verdana, sans-serif;
+    font-variant: small-caps;
+    font-size: 100px;
+}
+.about-text{
+    font-family:Verdana, sans-serif;
+}
+.img__wrap {
+    position: relative;
+    height: 200px;
+    width: 350px;
+}
+
+i{
+    color: #05d8e6;
+}
+
+.pink{
+    color:#f90d7b
+}
+
+.img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img__img {
+    height: 200px;
+    width: 350px;
+}
+
+video {
+    height: 200px;
+    width: 350px;
+}
+
+
+#projects {
+    width:1200px;
+    height: 500px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4edffe;
+
+}
+.proj {
+    width: 200px;
+    height: 350px;
+    margin-top: -100px;
+}
+
+.title {
+    margin-top: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff2a6d;
+}
+
+#contact{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
