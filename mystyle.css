@@ -143,3 +143,17 @@ video {
     justify-content: space-evenly;
 
 }
+
+.skill-icons {
+    margin: auto;
+    width: 50%;
+    align-items: flex-end;
+}
+
+.intro {
+    margin-top: -300px;
+}
+
+#skills {
+    margin-top: -150px;
+}
