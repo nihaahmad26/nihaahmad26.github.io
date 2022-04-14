@@ -35,7 +35,7 @@
 
     <div id = "About-me">     
         <div class = "intro">
-            <h1 class="title">Who am I?</h1>
+            <h1 class="glow">Who am I?</h1>
             <img src="images/niha.jpg" class="image">
         </div>
             <p class = "intro">Hi, I’m Niha! I’m really passionate about coding and design! Curious by nature, I'm the type of software developer that likes to explore new languages and develop more efficient ways to code. 
@@ -47,7 +47,7 @@
     </div>
     
     <div id = "skills">
-        <h1 class="title">Skills</h1>
+        <h1 class="glow">Skills</h1>
         <div class="skill-icons">
             <img src="https://img.icons8.com/plasticine/96/000000/github.png">
             <img src="https://img.icons8.com/color/96/000000/python--v1.png">
@@ -65,9 +65,48 @@
             
                      
         </div>
-    <h1 class="title">Projects</h1>
+        
+    
     <div id = "projects"> 
-        <div class = "proj">
+        <h1 class="glow">Projects:</h1>
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides">
+              <img src="images/Social_Cal.png" style="width:100%">
+              <div class="text"><a href="https://github.com/tue92944/socialcalendar"><i class="fa-brands fa-github fa-2x"></i></a></div>
+            </div>
+            <div class="mySlides">
+                <img src="images/weather_app.png" style="width:100%">
+                <div class="text"><a href="https://github.com/nihaahmad26/weather_app"><i class="fa-brands fa-github fa-2x"></i></a></div>
+              </div>
+            <div class="mySlides">
+                <img src="images/game.png" style="width:100%">
+                <div class="text"><a href="https://github.com/nihaahmad26/games"><i class="fa-brands fa-github fa-2x"></i></a></div>
+              </div>
+              
+            <div class="mySlides">
+              <img src="images/book.png" style="width: 80%;">
+              <div class="text"><a href="https://github.com/nihaahmad26/fav_book"><i class="fa-brands fa-github fa-2x"></i></a></div>
+            </div>
+          
+    
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+  
+          
+        <!-- <div class = "proj">
             <div class="img__wrap">
                 <img class="img__img" src="images/Social_Cal.png" />
                 <div class="img__description">
@@ -103,18 +142,87 @@
                 <p>Users can create Games, leave reviews, and see other reviews as well!</p>
             </div>
             </div>
+        </div> -->
+
+    </div>
+    <script>
+    let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    
+    <h1 class="glow">Video Demonstrations</h1>
+    <div class="videos">
+    <div class = "proj">
+        <div class="img__wrap">
+        <video controls width="600">
+            <source src="images/weather_App.mp4" type="video/webm">
+            <source src="images/weather_App.mp4" type="video/mp4">
+        </video>
+        <figcaption>Check the weather with this aesthetic Weather App! Watch as the backgrounds change to depict the current weather of any city!<a href="https://github.com/nihaahmad26/weather_app"><i class="fa-brands fa-github fa-2x"></i></a>
+        </figcaption>
         </div>
     </div>
-    
-    <div id = "contact">
-        <i class="fa-solid fa-envelope fa-1x"><p class ="pink">Nihaahmad26@gmail.com</p></i>
+    <div class = "proj">
+        <div class="img__wrap">
+        <video controls width="600">
+            <source src="images/finalgame.mp4" type="video/webm">
+            <source src="images/finalgame.mp4" type="video/mp4">
+        </video>
+        <figcaption>Game Library Website where Users can create and rate their favorite game! users can also leave a review and see other reviews. <a href="https://github.com/nihaahmad26/games"><i class="fa-brands fa-github fa-2x"></i></a></figcaption>
+        </div>
+    </div>
+    <div class = "proj">
+        <div class="img__wrap">
+        <video controls width="600">
+            <source src="images/book.mp4" type="video/webm">
+            <source src="images/book.mp4" type="video/mp4">
+        </video>
+        <figcaption>Book Store where users can search and buy a good read. Choose between novels, manga, comics, and more! <a href="https://github.com/nihaahmad26/e_commerce"><i class="fa-brands fa-github fa-2x"></i></a>
+        </figcaption>
+        </div>
+    </div>
+    </div>
+    <br><br><br><br>
+
+    <div>
+        <h1 class="glow">Contact Me</h1>
+        <div id = "contact">
+            
+            <i class="fa-solid fa-envelope fa-1x"><p class ="pink">Nihaahmad26@gmail.com</p></i>
 
 
-        <a href="https://github.com/nihaahmad26"><i class="fa-brands fa-github fa-2x"></i></a>
+            <a href="https://github.com/nihaahmad26"><i class="fa-brands fa-github fa-2x"></i></a>
 
-        <a href="https://www.linkedin.com/in/niha-ahmad/"><i class="fa-brands fa-linkedin fa-2x"></i>
+            <a href="https://www.linkedin.com/in/niha-ahmad/"><i class="fa-brands fa-linkedin fa-2x"></i>
     </div>
             
+</div>
             
             
         </div>

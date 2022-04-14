@@ -20,7 +20,19 @@
     width: 450px;
     display: flex;
     justify-content: space-evenly;
+    -webkit-animation: light 1s ease-in-out infinite alternate;
+    -moz-animation: light 1s ease-in-out infinite alternate;
+    animation: light 1s ease-in-out infinite alternate;
 }
+@-webkit-keyframes light {
+    from {
+      /* text-shadow: 0 0 2px #f90d7b, 0 0 2px #f90d7b, 0 0 2px #f90d7b, 0 0 20px #f90d7b, 0 0 50px #f90d7b, 0 0 70px #f90d7b, 0 0 70px #f90d7b; */
+    }
+    to {
+      text-shadow: 0 0 2px #f90d7b, 0 0 2px #f90d7b, 0 0 40px #f90d7b, 0 0 50px #f90d7b, 0 0 60px #f90d7b, 0 0 70px #f90d7b, 0 0 80px #f90d7b;
+    }
+  }
+
 
 #About-me{
     height: 750px;
@@ -62,14 +74,18 @@ a:hover {
     font-family: Verdana, sans-serif;
     font-variant: small-caps;
     font-size: 100px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 .about-text{
     font-family:Verdana, sans-serif;
+    
 }
 .img__wrap {
     position: relative;
-    height: 200px;
-    width: 350px;
+    height: 300px;
+    width: 600px;
 }
 
 i{
@@ -123,9 +139,22 @@ video {
     color: #4edffe;
 
 }
+
+figcaption{
+  width:350px;
+}
+.videos{
+  width:1220px;
+  height: 400px;
+  padding-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
 .proj {
     width: 200px;
-    height: 350px;
+    height: 200px;
     margin-top: -100px;
 }
 
@@ -138,6 +167,7 @@ video {
 }
 
 #contact{
+    padding: 20px;
     width: 500px;
     display: flex;
     justify-content: space-evenly;
@@ -157,3 +187,107 @@ video {
 #skills {
     margin-top: -150px;
 }
+
+/* NEW STUFF WAS ADDED BELOW */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 900px;
+  height: 400px;
+  position: relative;
+  margin: auto;
+  align-content: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  width: 900px;
+  height: 400px;
+  position: relative;
+  margin: auto;
+  align-content: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.glow {
+    font-size: 50px;
+    color: #ff2a6d;
+    text-align: center;
+    -webkit-animation: light 1s ease-in-out infinite alternate;
+    -moz-animation: light 1s ease-in-out infinite alternate;
+    animation: light 1s ease-in-out infinite alternate;
+    margin-top: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #44ade9, 0 0 20px #44ade9, 0 0 30px #44ade9, 0 0 40px #44ade9, 0 0 50px #44ade9, 0 0 60px #44ade9, 0 0 70px #44ade9;
+    }
+    to {
+      text-shadow: 0 0 20px #44ade9, 0 0 30px #44ade9, 0 0 40px #44ade9, 0 0 50px #44ade9, 0 0 60px #44ade9, 0 0 70px #44ade9, 0 0 80px #44ade9;
+    }
+  }
