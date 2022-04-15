@@ -36,11 +36,11 @@
 
 #About-me{
     padding-left: 70px;
-    width: 1500px;
+    width: 1485px;
     height: 800px;
     background-size: ;
     background-repeat: no-repeat;
-    background-size: 2250px 730px;
+    background-size: 2300px 730px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,10 +251,8 @@ figcaption{
 .text {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 100%;
   text-align: center;
 }
 
