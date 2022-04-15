@@ -35,7 +35,9 @@
 
 
 #About-me{
-    height: 750px;
+    padding-left: 70px;
+    width: 1200px;
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,8 +182,8 @@ figcaption{
     align-items: flex-end;
 }
 
-.intro {
-    margin-top: -300px;
+.media-heading{
+  margin-top: -125px;
 }
 
 #skills {
