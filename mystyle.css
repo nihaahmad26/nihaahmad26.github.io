@@ -36,14 +36,15 @@
 
 #About-me{
     padding-left: 70px;
-    width: 1200px;
+    width: 1500px;
     height: 800px;
+    background-size: ;
+    background-repeat: no-repeat;
+    background-size: 2250px 730px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #4edffe;
     background-color:#01012b;
-
 }
 a:link, a:visited, a:active {
     color: #f90d7b;
@@ -61,6 +62,13 @@ a:hover {
     height: 400px;
     width:450px;
     border-radius: 7%;
+}
+
+
+#text{
+  color: #05d8e6;
+  font-weight: 600;
+  width: 600px;
 }
 
 .About {
