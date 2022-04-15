@@ -56,7 +56,7 @@ a:hover {
 
 .image {
     padding: 20px;
-    height: 450px;
+    height: 400px;
     width:450px;
     border-radius: 7%;
 }
@@ -85,7 +85,7 @@ a:hover {
 .img__wrap {
     position: relative;
     height: 300px;
-    width: 600px;
+    width: 300px;
 }
 
 i{
