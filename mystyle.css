@@ -4,6 +4,14 @@
     border: 0;
 }
 
+@media only screen and (orientation: landscape) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+    display:block;
+  }
+}
+
 .body {
     width: 1515px;
     background-color:#01012b;
