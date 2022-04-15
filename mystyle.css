@@ -4,15 +4,6 @@
     border: 0;
 }
 
-@media only screen and (Width:600px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-    display:block;
-  }
-}
-
-
 /* INTRODUCTION NAVBAR FORMATTING */
 .body {
     width: auto;

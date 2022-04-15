@@ -1,0 +1,81 @@
+@media screen and (max-width: 600px) {
+    .body {
+        width: auto;
+        margin: auto;
+    }
+
+    .About{
+        width: auto;
+        margin: auto;
+        display: block;
+    }
+    .header{
+        margin: auto;
+    }
+    #navbar{
+        padding-top: 15px;
+        width: auto;
+        margin: auto;
+    }
+
+    .profile-text{
+        width: auto;
+        overflow-wrap: normal;
+    }
+    .media{
+        align-content: center;
+        width:auto;
+        height: auto;
+        padding: auto;
+        display: grid;
+        grid-auto-rows:max-content;
+    }
+    .media-body{
+        width: auto;
+        height: auto;
+        padding: 0px;
+    }
+    img.media{
+        padding: 0px;
+        width: auto;
+        align-content: center;
+    }
+
+    #text{
+        width: auto;
+        height:auto;
+        align-self: auto;
+        padding-left: 7px;
+        padding-right: 5px;
+        }
+
+    #About-me {
+      width: auto;
+      height: auto;
+      color: pink;
+    }
+
+    #skills{
+        width: auto;
+        display:-moz-grid-group;
+    }
+
+    .slideshow-container, .mySlides, #show-projects, #contact,.skill-icons,.img__wrap, figcaption{
+        width: auto;
+    }
+    .videos{
+        width: auto;
+        display: block;
+    }
+
+    .proj{
+        width: auto;
+        height: auto;
+    }
+    .prev, .next, i{
+        width: auto;
+        height: auto;
+    }
+
+    
+  }
