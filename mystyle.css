@@ -9,12 +9,29 @@
     width: auto;
     background-color:#01012b;
     color: #f90d7b;
-    font-family: Verdana, sans-serif;
-}
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  }
 .header{
     margin-top: -100px;
     display: flex;
     justify-content: center;
+    color: #05d8e6;
+}
+
+button{
+  color: #f90d7b;
+  background-color: black;
+  text-decoration: none;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  -webkit-animation: light 1s ease-in-out infinite alternate;
+  -moz-animation: light 1s ease-in-out infinite alternate;
+  animation: light 1s ease-in-out infinite alternate;
+}
+button:hover {
+  color: #f90d7b;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  background-color: transparent;
+  text-decoration: underline;  
 }
 
 .About {
@@ -22,7 +39,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #05d8e6;
   height: 800px;
 }
 
@@ -33,7 +49,13 @@
     -webkit-animation: light 1s ease-in-out infinite alternate;
     -moz-animation: light 1s ease-in-out infinite alternate;
     animation: light 1s ease-in-out infinite alternate;
+    
 }
+
+i{
+  color: #05d8e6;
+}
+
 @-webkit-keyframes light {
     from {
       /* text-shadow: 0 0 2px #f90d7b, 0 0 2px #f90d7b, 0 0 2px #f90d7b, 0 0 20px #f90d7b, 0 0 50px #f90d7b, 0 0 70px #f90d7b, 0 0 70px #f90d7b; */
@@ -43,19 +65,8 @@
     }
   }
 
-  a:link, a:visited, a:active {
-    color: #f90d7b;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:hover {
-    color: #f90d7b;
-    background-color: transparent;
-    text-decoration: underline;  
-}
-
 .profile-text {
-  font-family: Verdana, sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-variant: small-caps;
   font-size: 100px;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -98,10 +109,6 @@ a:hover {
     height: 400px;
     width:auto;
     border-radius: 7%;
-}
-
-i{
-    color: #05d8e6;
 }
 
 .pink{
