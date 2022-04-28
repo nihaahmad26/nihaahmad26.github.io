@@ -65,6 +65,7 @@
     }
     .videos{
         width: auto;
+        height: auto;
         display: block;
     }
 

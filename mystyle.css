@@ -7,9 +7,16 @@
 /* INTRODUCTION NAVBAR FORMATTING */
 .body {
     width: auto;
-    background-color:#01012b;
+    background-color:black;
     color: #f90d7b;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   }
+
+.scroll_to{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  margin-left: 3px;
+}
+
 .header{
     margin-top: -100px;
     display: flex;
@@ -27,12 +34,14 @@ button{
 }
 button:hover {
   color: #f90d7b;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   background-color: transparent;
   text-decoration: underline;  
 }
 
 .About {
+  background-image: url('images/back.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -43,7 +52,6 @@ button:hover {
 #navbar{
     width: 450px;
     display: flex;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     justify-content: space-evenly;
     -webkit-animation: light 1s ease-in-out infinite alternate;
     -moz-animation: light 1s ease-in-out infinite alternate;
@@ -65,7 +73,6 @@ i{
   }
 
 .profile-text {
-  /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
   font-variant: small-caps;
   font-size: 100px;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -80,13 +87,12 @@ i{
 
 #About-me{
     width: auto;
-    height: 800px;
+    height: 700px;
     background-repeat: no-repeat;
     background-size: 2300px 730px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#01012b;
 }
 
 .media-heading{
@@ -94,8 +100,7 @@ i{
 }
 
 #text{
-  color: #05d8e6;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  color: #05d8e6;  
   font-weight: 100;
   font-size: 18px;
   width: 600px;
@@ -115,6 +120,9 @@ i{
 }
 
 /* SKILLS */
+#skills{
+  background-image: url('images/sk.jpg');
+}
 .skill-icons {
   margin: auto;
   width: 50%;
@@ -139,6 +147,7 @@ i{
 
 .videos{
   width: auto;
+  height: 700px;
   display: flex;
   flex-wrap: wrap;
   justify-content:space-evenly;
@@ -165,7 +174,6 @@ video {
 
 figcaption{
   width:300px;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
 /* END VIDEO */
@@ -269,7 +277,6 @@ figcaption{
     font-size: 50px;
     color: #ff2a6d;
     text-align: center;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     -webkit-animation: light 1s ease-in-out infinite alternate;
     -moz-animation: light 1s ease-in-out infinite alternate;
     animation: light 1s ease-in-out infinite alternate;
